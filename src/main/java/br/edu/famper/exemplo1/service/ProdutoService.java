@@ -26,6 +26,7 @@ public class ProdutoService {
         return produtoRepository.findById(id);
     }
 
+    // teste
     public Produto update(Produto produto) {
         Produto salvo = produtoRepository.findById(produto.getCodigo())
                 .orElseThrow(() ->
